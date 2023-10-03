@@ -1,0 +1,125 @@
+wvSetPosition -win $_nWave1 {("G1" 0)}
+wvOpenFile -win $_nWave1 {/home/E94091194/lab3/ate.fsdb}
+wvGetSignalOpen -win $_nWave1
+wvGetSignalSetScope -win $_nWave1 "/testfixture"
+wvGetSignalSetScope -win $_nWave1 "/testfixture/ate"
+wvSetPosition -win $_nWave1 {("G1" 18)}
+wvSetPosition -win $_nWave1 {("G1" 18)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testfixture/ate/avg\[7:0\]} \
+{/testfixture/ate/bin} \
+{/testfixture/ate/block\[4:0\]} \
+{/testfixture/ate/clk} \
+{/testfixture/ate/counter\[5:0\]} \
+{/testfixture/ate/data\[63:0\]} \
+{/testfixture/ate/dout} \
+{/testfixture/ate/i\[31:0\]} \
+{/testfixture/ate/max\[7:0\]} \
+{/testfixture/ate/min\[7:0\]} \
+{/testfixture/ate/pix_data\[7:0\]} \
+{/testfixture/ate/reset} \
+{/testfixture/ate/sum\[8:0\]} \
+{/testfixture/ate/thout\[7:0\]} \
+{/testfixture/ate/threshold\[7:0\]} \
+{/LOGIC_LOW} \
+{/LOGIC_HIGH} \
+{/BLANK} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 \
+           18 )} 
+wvSetPosition -win $_nWave1 {("G1" 18)}
+wvGetSignalSetScope -win $_nWave1 "/testfixture"
+wvSetPosition -win $_nWave1 {("G1" 19)}
+wvSetPosition -win $_nWave1 {("G1" 19)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testfixture/ate/avg\[7:0\]} \
+{/testfixture/ate/bin} \
+{/testfixture/ate/block\[4:0\]} \
+{/testfixture/ate/clk} \
+{/testfixture/ate/counter\[5:0\]} \
+{/testfixture/ate/data\[63:0\]} \
+{/testfixture/ate/dout} \
+{/testfixture/ate/i\[31:0\]} \
+{/testfixture/ate/max\[7:0\]} \
+{/testfixture/ate/min\[7:0\]} \
+{/testfixture/ate/pix_data\[7:0\]} \
+{/testfixture/ate/reset} \
+{/testfixture/ate/sum\[8:0\]} \
+{/testfixture/ate/thout\[7:0\]} \
+{/testfixture/ate/threshold\[7:0\]} \
+{/LOGIC_LOW} \
+{/LOGIC_HIGH} \
+{/BLANK} \
+{/testfixture/binout\[0:23\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 19 )} 
+wvSetPosition -win $_nWave1 {("G1" 19)}
+wvSetPosition -win $_nWave1 {("G1" 20)}
+wvSetPosition -win $_nWave1 {("G1" 20)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testfixture/ate/avg\[7:0\]} \
+{/testfixture/ate/bin} \
+{/testfixture/ate/block\[4:0\]} \
+{/testfixture/ate/clk} \
+{/testfixture/ate/counter\[5:0\]} \
+{/testfixture/ate/data\[63:0\]} \
+{/testfixture/ate/dout} \
+{/testfixture/ate/i\[31:0\]} \
+{/testfixture/ate/max\[7:0\]} \
+{/testfixture/ate/min\[7:0\]} \
+{/testfixture/ate/pix_data\[7:0\]} \
+{/testfixture/ate/reset} \
+{/testfixture/ate/sum\[8:0\]} \
+{/testfixture/ate/thout\[7:0\]} \
+{/testfixture/ate/threshold\[7:0\]} \
+{/LOGIC_LOW} \
+{/LOGIC_HIGH} \
+{/BLANK} \
+{/testfixture/binout\[0:23\]} \
+{/testfixture/thresholdout\[0:23\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 20 )} 
+wvSetPosition -win $_nWave1 {("G1" 20)}
+wvSetPosition -win $_nWave1 {("G1" 20)}
+wvSetPosition -win $_nWave1 {("G1" 20)}
+wvAddSignal -win $_nWave1 -clear
+wvAddSignal -win $_nWave1 -group {"G1" \
+{/testfixture/ate/avg\[7:0\]} \
+{/testfixture/ate/bin} \
+{/testfixture/ate/block\[4:0\]} \
+{/testfixture/ate/clk} \
+{/testfixture/ate/counter\[5:0\]} \
+{/testfixture/ate/data\[63:0\]} \
+{/testfixture/ate/dout} \
+{/testfixture/ate/i\[31:0\]} \
+{/testfixture/ate/max\[7:0\]} \
+{/testfixture/ate/min\[7:0\]} \
+{/testfixture/ate/pix_data\[7:0\]} \
+{/testfixture/ate/reset} \
+{/testfixture/ate/sum\[8:0\]} \
+{/testfixture/ate/thout\[7:0\]} \
+{/testfixture/ate/threshold\[7:0\]} \
+{/LOGIC_LOW} \
+{/LOGIC_HIGH} \
+{/BLANK} \
+{/testfixture/binout\[0:23\]} \
+{/testfixture/thresholdout\[0:23\]} \
+}
+wvAddSignal -win $_nWave1 -group {"G2" \
+}
+wvSelectSignal -win $_nWave1 {( "G1" 20 )} 
+wvSetPosition -win $_nWave1 {("G1" 20)}
+wvGetSignalClose -win $_nWave1
+wvSetCursor -win $_nWave1 27924.258237 -snap {("G1" 9)}
+wvSelectSignal -win $_nWave1 {( "G1" 9 )} 
+wvSelectSignal -win $_nWave1 {( "G1" 9 10 )} 
+wvExit
